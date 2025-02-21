@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
 
 
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String tt() {
+        return "Hello From Bridge Labz";
 
-
-    @RequestMapping(value = "/hello",method = RequestMethod.GET)
-    public String  tt(){
-        return "nishant";
     }
 }
